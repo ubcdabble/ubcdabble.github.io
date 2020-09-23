@@ -8,7 +8,11 @@
   .ex {
     color: gray;
   }
-
+  .sub{
+    color: blue;
+    font-size: 14px;
+    font-weight:bold;
+  }
 </style>
 <title>MathJax TeX Test Page</title>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -20,11 +24,42 @@
 <body>
  A <span class="def"> differential equation </span> is an equation involving an unknown function \(y(t)\) and its derivatives \(y', y'', y'''\).
 <br>The <span class="def"> order</span> of a differential equation is the highest order derivative of \(y(t)\) in the equation.
-<br><span class="ex">\(y' + y = t^1\)</span> is first order while <span class="ex">\(y'' + ty' - y^2 = \cos(\pi t)\)</span> is second order.
+<br><span class="ex">\(y' + y = t^2\)</span> is first order while <span class="ex">\(y'' + ty' - y^2 = \cos(\pi t)\)</span> is second order.
 <br> A differential equation is <span class="def">linear</span> if it is of the form <span class="def">\(a_n(t)y^n + a_{(n-1)}(t)y^{(n-1)}+...+a_1(t)y'+a_0(t)y=f(t)\)</span>, where <span class="def">\(y^{n}=\frac{d^ny}{dt^n}\)</span>.
+<br> It is important to note that \(y, y', ..., y^{(n)}\) appear on their own, not inside any other function. Linear equations are important because they have nice properties, as we'll see later on.
+<br>
+<br> A first order differential equation is <span class="def">separable</span> if it is of the form <span class="def">\(y'=g(y)f(t)\)</span>
+<br> Here are some examples of different differential equations with their respective charateristics.
+<br>
+<br><span class="ex">\(y' = y^2\cos{(t)}\) </span>    First order, non-linear, separable DE <br>
+<br><span class="ex">\(y'+yt=t\) </span>    First order, linear, separable DE
+<br><span class="ex">\(y' = t-yt\) </span>
+<br><span class="ex">\(y' = t(1-y)\) </span> <br>
 
+<br><span class="ex">\(y'+yt=t^2\) </span>    First order, linear, non-separable DE
+<br><span class="ex">\(y'=t^2-yt\) </span> 
+<br><span class="ex">\(y'=t(t-y)\) </span> 
+<br>
+<br>A first order equation is <span class="def">autonomous</span> if it is of the form <span class = "def">\(y'=g(y)\)</span> (i.e. there is no t explicitly in the equation)
+<br><span class="ex">\(y'=y^2+1\)</span>    First order, non-linear, autonomous
+<br>
+<br> Before we start developing techniques to solve differential equations, note that is is usually <span style="color: red">impossible</span> to solve differential equations in real life; <br>
+by solve I mean find an explicit formula for \(y(t)\) but we can always use computers to approximate.
 <br>
 <br>
+<br><span class ="sub">Separable Equations</span>
+<br>
+<br> \(y' = g(y)f(t)\)
+<br> => \(\frac{1}{g(y)}y' = f(t)\)
+<br> \(\int\frac{1}{g(y)}y'dt = \int f(t)dt\)     Substitute \(y'=\frac{dy}{dt}\)
+<br> \(\int\frac{1}{g(y)}dy = \int f(t)dt\)       Solve for \(y\)
+<br>
+<br> Example: <span class ="ex">\(\y'=y^2t => \int\frac{1}{y^2}dy = \int tdt) <br> -\frac{1}{y} = \frac{t^2}{2}+C <br> y(t) = \frac{-1}{\frac{t^2}{2}+C}        C\epsilon\Bbb{R})</span> 
+
+
+
+
+<br><br><br>
  <br>   When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
 </body>
