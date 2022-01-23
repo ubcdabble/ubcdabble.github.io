@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhearten</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,600;0,800;1,100;1,300;1,400;1,600;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/6e43e0322d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><div class="logocolour">
+                <img src="images/logocolour.png" class="img-top">
+                <img src="images/logo.png" class="img-bot">
+               
+            </div></a>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">STUDENTS</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">ARTICLES</a></li>
+                    <li><a href="">ABOUT</a></li>
+                </ul>
+
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+       <div class="text-box">
+           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+           <h1>L E A R N</h1>
+           <p>Enhearten's goal is to give engineering students the resources necessary for them
+                to do better in school and figure out what they want to do</p>
+            <a href="" class="hero-btn">Find Out More</a>
+       </div>
+
+    </section>
+
+    <!--Course Content for Home Page-->
+    <section class="course">
+        <h1>For Students, By Students</h1>
+        <p>Hello there</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Course Resources</h3>
+                <p>
+                    Blah blah blah blah blah blah blah blah
+                </p>
+            </div></a>
+            <div class="course-col">
+                <h3>Mental Health Resources</h3>
+                <p>
+                    Blah blah blah blah blah blah blah blah
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Reflection Resources</h3>
+                <p>
+                    Blah blah blah blah blah blah blah blah
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Article Content for Home Page-->
+
+    <section class="articlegroups">
+        <h1>Important Matters in the Engineering World</h1>
+        <p>General Kenobi, you are a bold one</p>
+
+        <div class="row">
+            <div class="article-col">
+                <img src="images/equality.jpg">
+                <div class="layer">
+                    <a href="index.html"><h3>EQUALITY AND DIVERSITY</h3></a>
+                </div>
+            </div>
+
+            <div class="article-col">
+                <img src="images/mentalhealth.jpg">
+                <div class="layer">
+                    <a href="index.html"><h3>MENTAL HEALTH AND ACADEMICS</h3></a>
+                </div>
+            </div>
+
+            <div class="article-col">
+                <img src="images/tech.jpg">
+                <div class="layer">
+                    <a href="index.html"><h3>UPCOMING TECH</h3></a>
+                </div>
+            </div>
+
+            
+        </div>
+
+    </section>
+
+    <!--Project Content for Home Page-->
+
+    <section class="projectwindow">
+        <h1>Projects to dabble in</h1>
+        <p>Have you heard of the tragedy of Darth Plaguies the Wise?</p>
+
+        <div>
+            <img src="images/keyboard.jpg" style="width:400px;">
+           
+        </div>
+
+    </section>
+
+
+    <!-- Questions, Comments, or Concerns Content -->
+
+    <section class="questions">
+        <h1>Have any questions, comments, or concerns?</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Do you like pina coladas</p>
+        <div class="icons">
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with love <br><i class="fa fa-heart-o "></i></p>
+    </section>
+
+    <!---JavaScript for Menu Toggle (Mobile)-->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+</html>
